@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./icons/favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <title>Eccomerce</title>
+  </head>
+  <body>
+    <header class="navbarOtras">
+      <nav class="navbar navbar-expand-lg position-absolute top-0 start-0">
+        <!--boton hamburguesa-->
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler bg-body-tertiary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#desplegarMenu"
+            aria-controls="desplegarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Barra de navegacion-->
+          <div
+            class="collapse navbar-collapse d-lg-flex nav_listas"
+            id="desplegarMenu"
+          >
+            <!--Nombre de la pagina-->
+            <a class="navbar-brand col-lg-3 me-0" href="../index.html"
+              >Tienda de Acessorios</a
+            >
+            <!--Links de navegacion-->
+            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li class="nav-item nav_listas_items">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tienda.html">TIENDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+              </li>
+            </ul>
+            <!--Botones para ir al carrito e iniciar sesion-->
+            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <button class="btn-1" type="button">
+                <a href="../pages/login.html">
+                  <i class="fa-regular fa-user"></i
+                ></a>
+              </button>
+              <button class="btn-2" type="button">
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Cabecera de la pagina-->
+      <section class="py-5 text-center container-fluid cabecera">
+        <div
+          class="container cabecera__texto position-absolute bottom-0 start-50 translate-middle-x"
+        >
+          <div class="row py-lg-5 container">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">TIENDA</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Grid de bootstrap para la tienda-->
+      <div class="container container-fluid py-5">
+        <!--Migas de pan-->
+        <section aria-label="breadcrumb" class="migas_de_pan">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+          </ol>
+        </section>
+        <!--Uso el grid de bootstrap para el diseño-->
+        <div class="row">
+          <!--Creo una barra lateral para los filtros-->
+          <div class="col-md-auto col-lg-2 py-3 barra_lateral__filtro">
+            <div class="flex-shrink-0 p-3">
+              <span class="fs-5 fw-semibold">Filtrar por:</span>
+              <ul class="list-unstyled ps-0 barra_lateral__filtro_por">
+                <li
+                  class="shadow-sm p-3 mb-5 bg-white rounded barra_lateral__filtro_por_categorias"
+                >
+                  <button
+                    class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#categorias-collapse"
+                    aria-expanded="false"
+                  >
+                    Categorias
+                  </button>
+                  <div
+                    class="collapse barra_lateral__filtro_por_categorias_listas"
+                    id="categorias-collapse"
+                  >
+                    <ul
+                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                    >
+                      <li
+                        class="d-flex flex-column text-decoration-none rounded lista-anidada"
+                      >
+                        Anillos
+                      </li>
+                      <li
+                        class="d-flex flex-column text-decoration-none rounded lista-anidada"
+                      >
+                        Collares
+                      </li>
+                      <li
+                        class="d-flex flex-column text-decoration-none rounded lista-anidada"
+                      >
+                        Pulseras
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="shadow-sm p-3 mb-5 bg-white rounded barra_lateral__filtro_por_categorias"
+                >
+                  <button
+                    class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#precio-collapse"
+                    aria-expanded="false"
+                  >
+                    Precio
+                  </button>
+                  <div
+                    class="collapse barra_lateral__filtro_por_categorias_listas"
+                    id="precio-collapse"
+                  >
+                    <ul
+                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                    >
+                      <li
+                        class="d-flex flex-column text-decoration-none rounded lista-anidada"
+                      >
+                        100 a 150
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="shadow-sm p-3 mb-5 bg-white rounded barra_lateral__filtro_por_categorias"
+                >
+                  <button
+                    class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#material-collapse"
+                    aria-expanded="false"
+                  >
+                    Material
+                  </button>
+                  <div
+                    class="collapse barra_lateral__filtro_por_categorias_listas"
+                    id="material-collapse"
+                  >
+                    <ul
+                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                    >
+                      <li
+                        class="d-flex flex-column text-decoration-none rounded lista-anidada"
+                      >
+                        Oro
+                      </li>
+                      <li
+                        class="d-flex flex-column text-decoration-none rounded lista-anidada"
+                      >
+                        Plata
+                      </li>
+                      <li
+                        class="d-flex flex-column text-decoration-none rounded lista-anidada"
+                      >
+                        Acero
+                      </li>
+                      <li
+                        class="d-flex flex-column text-decoration-none rounded lista-anidada"
+                      >
+                        Bronce
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div class="row">
+              <!--Aca van los bloques de orden (esto es para despues)-->
+              <!--<div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-4 py-1 barra_lateral__filtro">
+                    <div class="flex-shrink-0 p-3">
+                      <p>hola</p>
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+              <!--Aca van las cards con los items-->
+              <div class="col-sm-8 col-sm-12">
+                <div class="row row-cols-sm-1 row-cols-lg-3 row-cols-md-2 g-3">
+                  <div class="col">
+                    <div
+                      class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
+                    >
+                      <img
+                        src="../img/aros1.jpg"
+                        class="img-fluid"
+                        alt="Producto en venta"
+                      />
+                      <div class="card-body ">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Eius, suscipit.
+                        </p>
+                        <h6 class="card-title card_precio text-sm-end fs-4">
+                          $100.00
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
+                    >
+                      <img
+                        src="../img/collar3.jpg"
+                        class="img-fluid"
+                        alt="Producto en venta"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Molestiae, necessitatibus.
+                        </p>
+                        <h6 class="card-title card_precio text-sm-end fs-4">
+                          $100.00
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
+                    >
+                      <img
+                        src="../img/collar8.jpg"
+                        class="img-fluid"
+                        alt="Producto en venta"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptatem, dicta!
+                        </p>
+                        <h6 class="card-title card_precio text-sm-end fs-4">
+                          $100.00
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
+                    >
+                      <img
+                        src="../img/aros5.jpg"
+                        class="img-fluid"
+                        alt="Producto en Venta"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Eaque, saepe?
+                        </p>
+                        <h6 class="card-title card_precio text-sm-end fs-4">
+                          $100.00
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
+                    >
+                      <img
+                        src="../img/collar6.jpg"
+                        class="img-fluid"
+                        alt="Producto en venta"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Inventore, deserunt!
+                        </p>
+                        <h6 class="card-title card_precio text-sm-end fs-4">
+                          $100.00
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div
+                      class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
+                    >
+                      <img
+                        src="../img/aros9.jpg"
+                        class="img-fluid"
+                        alt="Producto en venta"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Nam, veritatis?
+                        </p>
+                        <h6 class="card-title card_precio text-sm-end fs-4">
+                          $100.00
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Aca va la paginacion -->
+              <div class="col-sm-12">
+                <div class="row">
+                  <section
+                    aria-label="Page navigation"
+                    class="section_btn_paginacion"
+                  >
+                    <ul class="pagination py-3 btn_paginacion">
+                      <li class="page-item disabled shadow mb-5">
+                        <a
+                          class="page-link"
+                          href="#"
+                          tabindex="-1"
+                          aria-disabled="true"
+                          >Anterior</a
+                        >
+                      </li>
+                      <li class="page-item active shadow mb-5">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item shadow mb-5" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+
+                      <li class="page-item shadow mb-5">
+                        <a class="page-link" href="#">Siguiente</a>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="py-3">
+      <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link px-2 text-body-secondary"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/tienda.html"
+              class="nav-link px-2 text-body-secondary"
+              >Tienda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/contacto.html"
+              class="nav-link px-2 text-body-secondary"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/nosotros.html"
+              class="nav-link px-2 text-body-secondary"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/login.html"
+              class="nav-link px-2 text-body-secondary"
+              >Iniciar Sesion</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Selene Posadas</p>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

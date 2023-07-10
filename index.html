@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
+      crossorigin="anonymous"
+    />
+    <!--Icono de la pestaña-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./icons/favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+
+    <title>Eccomerce</title>
+  </head>
+  <body>
+    <div class="cover-container">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <!--boton hamburguesa-->
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler bg-body-tertiary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#desplegarMenu"
+            aria-controls="desplegarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Barra de navegacion-->
+          <div class="collapse navbar-collapse d-lg-flex columnanav" id="desplegarMenu">
+            <!--Nombre de la pagina-->
+            <a class="navbar-brand col-lg-3 me-0" href="../index.html"
+              >Tienda de Acessorios</a
+            >
+            <!--Links de navegacion-->
+            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tienda.html">TIENDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+              </li>
+            </ul>
+            <!--Botones para ir al carrito e iniciar sesion-->
+            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <button class="btn-1" type="button">
+                <a href="../pages/login.html">
+                  <i class="fa-regular fa-user"></i
+                ></a>
+              </button>
+              <button class="btn-2" type="button">
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Banner o portada de la pagina-->
+    <article class="banner">
+      <div class="banner-content">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore,
+          minima.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quam
+          quia ipsum velit molestiae incidunt exercitationem ea hic fuga
+          perspiciatis.
+        </p>
+        <a href="./pages/tienda.html"><button class="btn-comprar position-absolute bottom-10 start-20px">Comprar</button></a>
+      </div>
+    </article>
+  </div>
+    <main>
+      
+      <!--Info de compra-->
+      <article class="info-compra">
+        <section class="info-content-1">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Envios Gratis</h3>
+          <p>En compras superiores a $5000</p>
+        </section>
+
+        <section class="info-content-2">
+          <i class="fa-regular fa-credit-card"></i>
+          <h3>Cuotas sin interes</h3>
+          <p>Abonando en 3 pagos</p>
+        </section>
+
+        <section class="info-content-3">
+          <i class="fa-solid fa-lock"></i>
+          <h3>Compra con seguridad</h3>
+          <p>Tus datos estan seguros</p>
+        </section>
+      </article>
+
+      <!--Categorias con grid de bootstrap-->
+      <section class="categorias">
+        <div class="container">
+          <div class="contendor-grid py-3">
+            <div class="row">
+
+              <div class="col-lg-4 py-2">
+                <div class="contenedor-columna">
+                  <div class="card-categoria">
+                    <div class="card-content-categoria">
+                      <a href="./pages/tienda.html" class="btn btn-ver-categoria">COMPRAR</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 py-2">
+                    <div class="card-categoria">
+                      <div class="card-content-categoria">
+                        <a href="./pages/tienda.html" class="btn btn-ver-categoria">COMPRAR</a>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 py-2">
+                    <div class="card-categoria">
+                      <div class="card-content-categoria">
+                        <a href="./pages/tienda.html" class="btn btn-ver-categoria">COMPRAR</a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 py-2">
+                  <div class="card-categoria card-content-categoria__medio">
+                    <div class="card-content-categoria">
+                    <a href="./pages/tienda.html" class="btn btn-ver-categoria">COMPRAR</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="col-lg-6 py-2">
+                    <div class="card-categoria">
+                      <div class="card-content-categoria">
+                        <a href="./pages/tienda.html" class="btn btn-ver-categoria">COMPRAR</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 py-2">
+                    <div class="card-categoria">
+                      <div class="card-content-categoria">
+                        <a href="./pages/tienda.html" class="btn btn-ver-categoria">COMPRAR</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-categoria">
+                  <div class="card-content-categoria">
+                    <a href="./pages/tienda.html" class="btn btn-ver-categoria">COMPRAR</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Tarjeta de nuevo-->
+      <section class="new">
+        <div class="card-new-container container-fluid">
+          <div class="card-new">
+            <h3>#NEW</h3>
+            <img src="./img/collar_cat.jpg" alt="Imagen de categoría" />
+            <div class="card-content-new">
+              <a href="./pages/tienda.html" class="button">COMPRAR</a>
+            </div>
+          </div>
+          <!--Tarjeta de productos nuevos-->
+          <div>
+            <div class="card-new-items">
+              <div class="card-item">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" />
+                <div class="card-content-item">
+                  <h3>Producto 1</h3>
+                  <p>Descripción de Producto 1.</p>
+                  <a href="./pages/tienda.html" class="button">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!--Tarjeta de producto nuevo 2-->
+            <div>
+              <div>
+                <div class="card-new-items">
+                  <div class="card-item">
+                    <img src="./img/collar5.jpg" alt="Imagen de categoría" />
+                    <div class="card-content-item">
+                      <h3>Producto 2</h3>
+                      <p>Descripción del producto 2.</p>
+                      <a href="./pages/tienda.html" class="button">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Tarjeta de producto nuevo 3-->
+          <div>
+            <div class="card-new-items">
+              <div class="card-item">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" />
+                <div class="card-content-item">
+                  <h3>Producto 3</h3>
+                  <p>Descripción del Producto 3.</p>
+                  <a href="./pages/tienda.html" class="button">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <div class="card-new-items">
+                  <div class="card-item">
+                    <img src="./img/collar5.jpg" alt="Imagen de categoría" />
+                    <div class="card-content-item">
+                      <h3>Producto 1</h3>
+                      <p>Descripción de Producto 1</p>
+                      <a href="./pages/tienda.html" class="button">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-new-items">
+              <div class="card-item">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" />
+                <div class="card-content-item">
+                  <h3>Producto 1</h3>
+                  <p>Descripción de Producto 1</p>
+                  <a href="./pages/tienda.html" class="button">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <div class="card-new-items">
+                  <div class="card-item">
+                    <img src="./img/collar5.jpg" alt="Imagen de categoría" />
+                    <div class="card-content-item">
+                      <h3>Producto 1</h3>
+                      <p>Descripción de Producto 1</p>
+                      <a href="./pages/tienda.html" class="button">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-suscripcion">
+        <div class="banner-suscripcion-content">
+          <h3>Suscribete para recibir novedades!</h3>
+          <input type="email" placeholder="tuemail@mail.com" />
+          <button class="btn-suscripcion">SUSCRÍBETE</button>
+        </div>
+      </section>
+    </main>
+      <!--Pie de pagina-->
+      <footer class="py-3">
+        <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+          <li class="nav-item"><a href="./pages/tienda.html" class="nav-link px-2 text-body-secondary">Tienda</a></li>
+          <li class="nav-item"><a href="./pages/contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+          <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link px-2 text-body-secondary">Nosotros</a></li>
+          <li class="nav-item"><a href="./pages/login.html" class="nav-link px-2 text-body-secondary">Iniciar Sesion</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Selene Posadas</p>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+        </ul>
+      </div>
+      </footer>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
