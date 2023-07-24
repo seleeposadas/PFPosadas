@@ -1,6 +1,6 @@
 main{
     .banner-nosotros{
-        @include background-image("../img/pexels-ivan-samkov-7394374.jpg", center, no-repeat, cover, relative);
+        @include background-image("./img/pexels-ivan-samkov-7394374.jpg", center, no-repeat, cover, relative);
         @include sizes(600px, 100%);
         opacity: .6;
         z-index: 0;
