@@ -1,6 +1,6 @@
 main{
     .banner-contacto{
-        @include background-image("../img/pexels-towfiqu-barbhuiya-8780312.jpg", center, no-repeat, cover, relative);
+        @include background-image("./img/pexels-towfiqu-barbhuiya-8780312.jpg", center, no-repeat, cover, relative);
         @include sizes(600px, 100%);
         opacity: .6;
         z-index: 0;
