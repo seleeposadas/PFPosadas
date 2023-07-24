@@ -1,6 +1,6 @@
 /*Categorias*/
 .card-categoria{
-    @include background-image("../img/collar.jpg", top, no-repeat, cover, relative);
+    @include background-image("./img/collar.jpg", top, no-repeat, cover, relative);
     @include sizes(200px, auto);
     display: flex;
     flex-direction: row;
