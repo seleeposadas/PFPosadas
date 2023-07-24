@@ -17,7 +17,7 @@
 
 
 .cover-container{
-    @include background-image("/img/banner.jpg", center, no-repeat, cover, relative);
+    @include background-image("../img/banner.jpg", center, no-repeat, cover, relative);
     @include sizes(100vh, 100%);
     a{
       color: white;
