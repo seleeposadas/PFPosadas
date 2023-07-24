@@ -1,3 +1,3 @@
 /vistas Wireframe
 
-\*.map
+style.css.map
