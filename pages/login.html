@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tienda de Acessorios - Iniciar Sesion - Consegui los mejores accesorios a un precio imperdible! Recibimos todas los medios de pago. Hacemos envios a domicilio dentro de la provincia de Cordoba.">
-    <meta name="keywords" content="TIENDA, ACCESORIOS, COMPRAR, ENVIOS, CORDOBA, MEDIOS DE PAGO, JOYAS, RELOJ, RELOJES, ANILLO, ANILLOS, PULSERAS, AROS, ARITOS">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <meta
+      name="description"
+      content="Tienda de Acessorios - Iniciar Sesion - Consegui los mejores accesorios a un precio imperdible! Recibimos todas los medios de pago. Hacemos envios a domicilio dentro de la provincia de Cordoba."
+    />
+    <meta
+      name="keywords"
+      content="TIENDA, ACCESORIOS, COMPRAR, ENVIOS, CORDOBA, MEDIOS DE PAGO, JOYAS, RELOJ, RELOJES, ANILLO, ANILLOS, PULSERAS, AROS, ARITOS"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <!--Font Awesome-->
     <link
@@ -25,166 +31,219 @@
   </head>
   <body>
     <header class="navbarOtras">
-        <nav class="navbar navbar-expand-lg position-absolute top-0 start-0">
-          <!--boton hamburguesa-->
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler bg-body-tertiary"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#desplegarMenu"
-              aria-controls="desplegarMenu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+      <nav class="navbar navbar-expand-lg position-absolute top-0 start-0">
+        <!--boton hamburguesa-->
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler bg-body-tertiary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#desplegarMenu"
+            aria-controls="desplegarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Barra de navegacion-->
+          <div
+            class="collapse navbar-collapse d-lg-flex nav_listas"
+            id="desplegarMenu"
+          >
+            <!--Nombre de la pagina-->
+            <a class="navbar-brand col-lg-3 me-0" href="../index.html"
+              >Tienda de Acessorios</a
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-  
-            <!--Barra de navegacion-->
-            <div
-              class="collapse navbar-collapse d-lg-flex nav_listas"
-              id="desplegarMenu"
-            >
-              <!--Nombre de la pagina-->
-              <a class="navbar-brand col-lg-3 me-0" href="../index.html"
-                >Tienda de Acessorios</a
-              >
-              <!--Links de navegacion-->
-              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html"
-                    >INICIO</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/tienda.html">TIENDA</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
-                </li>
-              </ul>
-              <!--Botones para ir al carrito e iniciar sesion-->
-              <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                <button class="btn-navbar btn-1" type="button">
-                  <a href="../pages/login.html">
-                    <i class="fa-regular fa-user"></i
-                  ></a>
-                </button>
-                <button class="btn-navbar btn-2" type="button">
-                  <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-                </button>
-              </div>
+            <!--Links de navegacion-->
+            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tienda.html">TIENDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+              </li>
+            </ul>
+            <!--Botones para ir al carrito e iniciar sesion-->
+            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <button class="btn-navbar btn-1" type="button">
+                <a href="../pages/login.html">
+                  <i class="fa-regular fa-user"></i
+                ></a>
+              </button>
+              <button class="btn-navbar btn-2" type="button">
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+              </button>
             </div>
           </div>
-        </nav>
-      </header>
-   <main>
-    <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5"
+        tabindex="-1"
+        role="dialog"
+        id="modalSignin"
+      >
         <div class="modal-dialog" role="document" data-aos="zoom-in">
           <div class="modal-content rounded-4 shadow">
-            <div class="modal-header p-5 pb-4 border-bottom-0 d-flex flex-column">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <div
+              class="modal-header p-5 pb-4 border-bottom-0 d-flex flex-column"
+            >
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
               <p class="iconos"><i class="fa-regular fa-circle-user"></i></p>
               <h1 class="fw-bold mb-0 fs-2">Iniciar Sesion</h1>
             </div>
-      
+
             <div class="modal-body p-5 pt-0">
               <form class="iniciar-sesion">
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control rounded-3" id="ventana-flotante" placeholder="nombre@ejemplo.com">
+                  <input
+                    type="email"
+                    class="form-control rounded-3"
+                    id="ventana-flotante"
+                    placeholder="nombre@ejemplo.com"
+                  />
                   <label for="ventana-flotante">Direccion de Email</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="password" class="form-control rounded-3" id="ventana-flotante-contrasenia" placeholder="Contraseña">
+                  <input
+                    type="password"
+                    class="form-control rounded-3"
+                    id="ventana-flotante-contrasenia"
+                    placeholder="Contraseña"
+                  />
                   <label for="ventana-flotante-contrasenia">Contraseña</label>
                 </div>
-                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-iniciar" type="submit">Ingresar</button>
-                <small class="text-body-secondary">¿No tenes una cuenta? Create una clickeando <a href="#">acá</a></small>
-                <hr class="my-4">
-                <h2 class="fs-5 fw-bold mb-3">O ingresa con:</h2>
-                <button class="w-100 py-2 mb-2 btn btn-redes rounded-3" type="submit">
-                    <a class="text-body-secondary" href="#">
-                     Ingresa con Twitter <i class="fa-brands fa-twitter"></i ></a>
+                <button
+                  class="w-100 mb-2 btn btn-lg rounded-3 btn-iniciar"
+                  type="submit"
+                >
+                  Ingresar
                 </button>
-                <button class="w-100 py-2 mb-2 btn btn-redes rounded-3" type="submit">
-                    <a class="text-body-secondary" href="#">
-                        Ingresa con Facebook <i class="fa-brands fa-facebook"></i
+                <small class="text-body-secondary"
+                  >¿No tenes una cuenta? Create una clickeando
+                  <a href="#">acá</a></small
+                >
+                <hr class="my-4" />
+                <h2 class="fs-5 fw-bold mb-3">O ingresa con:</h2>
+                <button
+                  class="w-100 py-2 mb-2 btn btn-redes rounded-3"
+                  type="submit"
+                >
+                  <a class="text-body-secondary" href="#">
+                    Ingresa con Twitter <i class="fa-brands fa-twitter"></i
                   ></a>
                 </button>
-                <button class="w-100 py-2 mb-2 btn btn-redes rounded-3" type="submit">
-                    <a class="text-body-secondary" href="#">
-                        Ingresa con Google <i class="fa-brands fa-google"></i
+                <button
+                  class="w-100 py-2 mb-2 btn btn-redes rounded-3"
+                  type="submit"
+                >
+                  <a class="text-body-secondary" href="#">
+                    Ingresa con Facebook <i class="fa-brands fa-facebook"></i
+                  ></a>
+                </button>
+                <button
+                  class="w-100 py-2 mb-2 btn btn-redes rounded-3"
+                  type="submit"
+                >
+                  <a class="text-body-secondary" href="#">
+                    Ingresa con Google <i class="fa-brands fa-google"></i
                   ></a>
                 </button>
               </form>
+              <!--Migas de pan-->
+              <section aria-label="breadcrumb" class="migas_de_pan">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="../index.html">Inicio</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Iniciar Sesion
+                  </li>
+                </ol>
+              </section>
             </div>
           </div>
         </div>
       </div>
-   </main>
-   <footer class="py-3">
-    <div class="container">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item">
-          <a href="../index.html" class="nav-link px-2 text-body-secondary"
-            >Inicio</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            href="../pages/tienda.html"
-            class="nav-link px-2 text-body-secondary"
-            >Tienda</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            href="../pages/contacto.html"
-            class="nav-link px-2 text-body-secondary"
-            >Contacto</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            href="../pages/nosotros.html"
-            class="nav-link px-2 text-body-secondary"
-            >Nosotros</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            href="../pages/login.html"
-            class="nav-link px-2 text-body-secondary"
-            >Iniciar Sesion</a
-          >
-        </li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2023 Selene Posadas</p>
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#"
-            ><i class="fa-brands fa-square-facebook"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script src="../js/popper.js"></script>
-  <script src="../js/bootstrap.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script> AOS.init();</script>
-</body>
+    </main>
+    <footer class="py-3">
+      <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link px-2 text-body-secondary"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/tienda.html"
+              class="nav-link px-2 text-body-secondary"
+              >Tienda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/contacto.html"
+              class="nav-link px-2 text-body-secondary"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/nosotros.html"
+              class="nav-link px-2 text-body-secondary"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/login.html"
+              class="nav-link px-2 text-body-secondary"
+              >Iniciar Sesion</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Selene Posadas</p>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

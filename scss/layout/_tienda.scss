@@ -58,7 +58,7 @@ section.cabecera{
         a{
             background-color: $colorCeleste;
             border: none;
-            padding: 20px;
+            padding: 10px;
             @include fuente('Roboto Tin', $fontSizeChica, #374259);
          &:hover{
             background-color: $colorCelesteHover;

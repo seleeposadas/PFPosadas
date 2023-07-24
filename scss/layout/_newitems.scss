@@ -11,7 +11,7 @@
       border-radius: 5px;
       overflow: hidden;
       & img {
-        @include sizes(50%, 50%);
+        @include sizes(100%, auto);
       }
       .card-content-new {
         bottom: 0;
@@ -59,7 +59,7 @@
         opacity: .7;
       }
       & img {
-        @include sizes(80%, 80%);
+        @include sizes(100%, auto);
       }
       .card-content-item {
         padding: 20px;
