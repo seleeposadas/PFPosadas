@@ -1,0 +1,35 @@
+main{
+    .banner-nosotros{
+        @include background-image("/img/pexels-ivan-samkov-7394374.jpg", center, no-repeat, cover, relative);
+        @include sizes(600px, 100%);
+        opacity: .6;
+        z-index: 0;
+        & h1 {
+            @extend .titulo-h1;
+        }
+    }
+    .nosotros{
+        .nosotros-content{
+            .nosotros-img{
+                border: 1px solid $colorCeleste;
+                border-radius: 10px;
+                padding: 20px;
+                img{
+                    @include sizes(70%, 100%);
+                    border-radius: 10px;
+                }
+            }
+            
+            h2 {
+                @extend .titulo-h2;
+            }
+            p{
+                @extend .text;
+                padding: 15px;
+            }
+            .iconos{
+                @extend .titulo-h2;
+            }
+        }
+    }
+}

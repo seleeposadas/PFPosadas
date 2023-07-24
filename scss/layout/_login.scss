@@ -1,0 +1,38 @@
+main{
+    div{
+        p.iconos{
+            @include fuente('Roboto Tin', 100px, gray);
+        }
+        h1{
+            @include fuente('Roboto Black', 100px, black);
+        }
+    }
+    form {
+        label{
+            @include fuente('Roboto Tin', $fontSizeNormal, gray);
+        }
+        .btn-lg{
+            @extend .btn-comprar;
+            font-size: $fontSizeNormal;
+            &:focus{
+                background-color: $colorRosaHover;
+                padding: 20px;
+                font-size: 20px;
+                box-shadow: 1px 5px 10px grey;
+            }
+    
+        }
+    }
+    .btn-redes{
+        a{
+            text-decoration: none;
+        }
+        &:focus{
+            background-color: $colorCeleste;
+            padding: 20px;
+            font-size: 20px;
+            box-shadow: 1px 5px 10px grey;
+        }
+    }
+   
+}

@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tienda de Acessorios - Inicio - Consegui los mejores accesorios a un precio imperdible! Recibimos todas los medios de pago. Hacemos envios a domicilio dentro de la provincia de Cordoba.">
+    <meta name="keywords" content="TIENDA, ACCESORIOS, COMPRAR, ENVIOS, CORDOBA, MEDIOS DE PAGO, JOYAS, RELOJ, RELOJES, ANILLO, ANILLOS, PULSERAS, AROS, ARITOS">
     <!--Bootstrap-->
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <!--Font Awesome-->
     <link
@@ -21,7 +24,7 @@
       sizes="32x32"
     />
 
-    <title>Eccomerce</title>
+    <title>Tienda de Acessorios - Inicio</title>
   </head>
   <body>
     <div class="cover-container">
@@ -66,13 +69,14 @@
             </ul>
             <!--Botones para ir al carrito e iniciar sesion-->
             <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <button class="btn-1" type="button">
+              <button class="btn-navbar btn-1" type="button">
                 <a href="./pages/login.html">
                   <i class="fa-regular fa-user"></i
                 ></a>
               </button>
-              <button class="btn-2" type="button">
-                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+              <button class="btn-navbar btn-2" type="button">
+                <a href="#">
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
               </button>
             </div>
           </div>
@@ -82,7 +86,7 @@
     <!--Banner o portada de la pagina-->
     <article class="banner">
       <div class="banner-content">
-        <h1>
+        <h1 class="titulo-h1">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore,
           minima.
         </h1>
@@ -99,28 +103,27 @@
       
       <!--Info de compra-->
       <article class="info-compra">
-        <section class="info-content-1">
+        <section class="info-content info-content-1">
           <i class="fa-solid fa-truck"></i>
-          <h3>Envios Gratis</h3>
+          <h2>Envios Gratis</h2>
           <p>En compras superiores a $5000.</p>
         </section>
 
-        <section class="info-content-2">
+        <section class="info-content info-content-2">
           <i class="fa-regular fa-credit-card"></i>
-          <h3>Cuotas sin interes</h3>
+          <h2>Cuotas sin interes</h2>
           <p>Abonando en 3 pagos</p>
         </section>
 
         <section class="info-content-3">
           <i class="fa-solid fa-lock"></i>
-          <h3>Compra con seguridad</h3>
+          <h2>Compra con seguridad</h2>
           <p>Tus datos estan seguros</p>
         </section>
       </article>
-
       <!--Categorias con grid de bootstrap-->
       <section class="categorias">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <div class="contendor-grid py-3">
             <div class="row">
 
@@ -189,97 +192,88 @@
 
       <!--Tarjeta de nuevo-->
       <section class="new">
-        <div class="card-new-container container-fluid">
-          <div class="card-new">
-            <h3>#NEW</h3>
-            <img src="./img/collar_cat.jpg" alt="Imagen de categoría" />
-            <div class="card-content-new">
-              <a href="./pages/tienda.html" class="button">COMPRAR</a>
+        <div class="container">
+          <div class="row" data-aos="zoom-in">
+            <!-- Tarjeta principal de nuevo -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card-new">
+                <h3 class="m-3">#NEW</h3>
+                <img src="./img/collar_cat.jpg" alt="Imagen de categoría" class="img-fluid">
+                <div class="card-content">
+                  <a href="./pages/tienda.html" class="btn btn-primary">COMPRAR</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <!--Tarjeta de productos nuevos-->
-          <div>
-            <div class="card-new-items">
-              <div class="card-item">
-                <img src="./img/collar5.jpg" alt="Imagen de categoría" />
-                <div class="card-content-item">
+    
+            <!-- Tarjetas de nuevos productos -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" class="img-fluid">
+                <div class="card-content">
                   <h3>Producto 1</h3>
                   <p>Descripción de Producto 1.</p>
-                  <a href="./pages/tienda.html" class="button">Ver más</a>
+                  <a href="./pages/tienda.html" class="btn btn-ver-mas">Ver más</a>
                 </div>
               </div>
             </div>
-            <!--Tarjeta de producto nuevo 2-->
-            <div>
-              <div>
-                <div class="card-new-items">
-                  <div class="card-item">
-                    <img src="./img/collar5.jpg" alt="Imagen de categoría" />
-                    <div class="card-content-item">
-                      <h3>Producto 2</h3>
-                      <p>Descripción del producto 2.</p>
-                      <a href="./pages/tienda.html" class="button">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Tarjeta de producto nuevo 3-->
-          <div>
-            <div class="card-new-items">
-              <div class="card-item">
-                <img src="./img/collar5.jpg" alt="Imagen de categoría" />
-                <div class="card-content-item">
-                  <h3>Producto 3</h3>
-                  <p>Descripción del Producto 3.</p>
-                  <a href="./pages/tienda.html" class="button">Ver más</a>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <div class="card-new-items">
-                  <div class="card-item">
-                    <img src="./img/collar5.jpg" alt="Imagen de categoría" />
-                    <div class="card-content-item">
-                      <h3>Producto 1</h3>
-                      <p>Descripción de Producto 1</p>
-                      <a href="./pages/tienda.html" class="button">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="card-new-items">
-              <div class="card-item">
-                <img src="./img/collar5.jpg" alt="Imagen de categoría" />
-                <div class="card-content-item">
+    
+            <!-- Tarjetas de nuevos productos -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" class="img-fluid">
+                <div class="card-content">
                   <h3>Producto 1</h3>
-                  <p>Descripción de Producto 1</p>
-                  <a href="./pages/tienda.html" class="button">Ver más</a>
+                  <p>Descripción de Producto 1.</p>
+                  <a href="./pages/tienda.html" class="btn btn-primary">Ver más</a>
                 </div>
               </div>
             </div>
-
-            <div>
-              <div>
-                <div class="card-new-items">
-                  <div class="card-item">
-                    <img src="./img/collar5.jpg" alt="Imagen de categoría" />
-                    <div class="card-content-item">
-                      <h3>Producto 1</h3>
-                      <p>Descripción de Producto 1</p>
-                      <a href="./pages/tienda.html" class="button">Ver más</a>
-                    </div>
-                  </div>
+            <!-- Tarjetas de nuevos productos -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" class="img-fluid">
+                <div class="card-content">
+                  <h3>Producto 1</h3>
+                  <p>Descripción de Producto 1.</p>
+                  <a href="./pages/tienda.html" class="btn btn-primary">Ver más</a>
                 </div>
               </div>
             </div>
+            <!-- Tarjetas de nuevos productos -->
+            <div class="col-md-6 col-lg-3 offset-lg-3 mb-4">
+              <div class="card">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" class="img-fluid">
+                <div class="card-content">
+                  <h3>Producto 1</h3>
+                  <p>Descripción de Producto 1.</p>
+                  <a href="./pages/tienda.html" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjetas de nuevos productos -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" class="img-fluid">
+                <div class="card-content">
+                  <h3>Producto 1</h3>
+                  <p>Descripción de Producto 1.</p>
+                  <a href="./pages/tienda.html" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjetas de nuevos productos -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="./img/collar5.jpg" alt="Imagen de categoría" class="img-fluid">
+                <div class="card-content">
+                  <h3>Producto 1</h3>
+                  <p>Descripción de Producto 1.</p>
+                  <a href="./pages/tienda.html" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Repite este bloque de código para las otras tarjetas de nuevos productos -->
+    
           </div>
         </div>
       </section>
@@ -312,5 +306,8 @@
       </footer>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+
   </body>
 </html>

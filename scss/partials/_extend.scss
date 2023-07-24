@@ -1,0 +1,75 @@
+.titulo-h1{
+    @include fuente('Roboto Black', $fontSizeGrande, white);
+}
+.titulo-h2{
+    @include fuente('Roboto Medium', $fontSizeGrande, black);
+}
+.titulo-h3{
+    @include fuente('Roboto Medium', $fontSizeMediana, black);
+}
+.text{
+    @include fuente('Roboto Tin', $fontSizeChica, gray);
+}
+.btn-comprar{
+    border: none;
+    cursor: pointer;
+    background-color: $colorRosa;
+    border-radius: 18px;
+    @include fuente('Roboto Black', $fontSizeMediana, white);
+    &:hover{
+      background-color: $colorRosaHover;
+    }
+}
+.btn-mas{
+    border: none;
+    cursor: pointer;
+    background-color: $colorVerde;
+    border-radius: 10px;
+    @include fuente('Roboto Black', $fontSizeNormal, white);
+    &:hover{
+      background-color: $colorVerdeHover;
+    }
+}
+.card-producto{
+    box-shadow: 1px 5px 10px grey;
+    border-radius: 5px;
+    img {
+      @include sizes(100%, auto);
+    }
+    .card-content{
+      padding: 20px;
+      @include sizes(100%, auto);
+      h3{
+        @extend .titulo-h3;
+      }
+      p {
+        margin-bottom: 20px;
+        @include fuente('Roboto Tin', $fontSizeChica, gray);
+      }
+      .btn{
+        @extend .btn-mas;
+        &:hover{
+            background-color: $colorVerdeHover;
+            @include sizes(100%, 50%);
+        }
+      }
+    }
+    &:hover{
+        box-shadow: 1px 10px 20px grey;
+        border-radius: 5px;
+    }
+    .btn:focus{
+      opacity: .5;
+    }
+  }
+
+.btn-redes{
+  border: 5px solid $colorCeleste;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  @include fuente('Roboto Black', $fontSizeNormal, black);
+  &:hover{
+    background-color: $colorCelesteHover;
+  }
+}

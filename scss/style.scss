@@ -1,0 +1,95 @@
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/fonts";
+@import "partials/mixins";
+@import "partials/extend";
+@import "layout/divisor";
+@import "layout/navbar";
+@import "layout/footer";
+@import "layout/cards";
+@import "layout/categorias";
+@import "layout/newitems";
+@import "layout/bannersuscripcion";
+@import "layout/tienda";
+@import "layout/contacto";
+@import "layout/nosotros";
+@import "layout/login";
+
+
+.cover-container{
+    @include background-image("/img/banner.jpg", center, no-repeat, cover, relative);
+    @include sizes(100vh, 100%);
+    a{
+      color: white;
+    }
+  }
+  /*banner*/
+  .banner {
+    align-items: center;
+    height: 850px;
+    justify-content: flex-end;
+    .banner-content {
+      padding: 260px 10px 15px 40px;
+      color: white;
+    }
+      h1 {
+      margin-bottom: 10px;
+      text-align: left;
+      @extend .titulo-h1;
+    }
+    h2 {
+      @extend .titulo-h2;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    p{
+      @include fuente('Roboto Tin', $fontSizeChica, white);
+    }
+    button {
+      display: inline;
+      padding: 20px 60px;
+      &:hover{
+        background-color: $colorRosaHover;
+      }
+      &:focus{
+        background-color: $colorRosaHover;
+        padding: 30px;
+        font-size: 30px;
+        box-shadow: 1px 5px 10px grey;
+    }
+    }
+  }  
+  /*info*/
+article.info-compra{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  @include sizes(250px, 100%);
+  @include fuente('Roboto Black', $fontSizeMediana, black);
+
+  .info-content{
+    width: 50%;
+    border-right: 2px solid rgb(17, 15, 15);
+  }
+  .info-content-3{
+    width: 50%;
+  }
+  p{
+    @extend .titulo-h3;
+  }
+}
+header div.row{
+  width: 100%;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+div{
+  display: block
+}
+}
+  @import "partials/queries";

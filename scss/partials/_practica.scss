@@ -1,0 +1,47 @@
+/*Me permite reutilizar codigo, a diferencia del extend, me permite configurarlo uin poco mas. Tambien, al mixin lo puedo llamar en cualquier lado. Es como una funcion, en programacion*/
+/*@mixin encabezados(){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+}*/
+
+@include encabezados(2rem); /*Aca llamo a la funcion, lo llame por fuera de una etiqueta o clase*/
+
+
+
+/*.btn-small{
+    @extend .btn; Hereda los valores de la clase btn
+    width: 40px
+}*/
+
+@mixin encabezados($tamanio){
+    h1{
+        font-size: $tamanio;
+    }
+    h2{
+        font-size: $tamanio - 0.2;
+    }
+    h3{
+        font-size: $tamanio - 0.5;
+    }
+    h4{
+        font-size: $tamanio - 0.7;
+    }
+}
+
+@mixin queries($size, $img){
+    @media screen and (min-width:$size){
+        .picture {
+            width: $img;
+        }
+    }
+}

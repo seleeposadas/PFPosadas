@@ -1,0 +1,71 @@
+ /*Barra de navegacion*/
+ header nav {
+  @include fuente('Roboto Black', $fontSizeMediana - 5, white);
+    @include sizes(150px, $anchoMax);
+    justify-content: space-evenly;  
+  }
+  
+   /*Barra de navegacion de las otras paginas*/
+  .navbarOtras{
+    background-color: $colorVerde;
+    @include sizes(150px, $anchoMax);
+    position: relative;
+    z-index: 1;
+     div.nav_listas{
+        background-color: $colorVerde;
+      }
+      a{
+        color: white;
+      }
+  }
+/* boton hamburguesa y hover de la barra de navegacion*/
+ header nav{
+    div button span{
+        border-radius: 5px;
+        font-size: 25px;
+        padding: 25px;
+ }
+    div a:hover{
+     background-color: $colorGrisClaroHover;
+     opacity: .75;
+     border-radius: 15px;
+  }
+  div a:focus{
+    background-color: $colorRosaHover;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 1px 5px 10px grey;
+} 
+}
+  /*Botones de la barra de navegacion login y carrito*/
+  .btn-navbar{
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    &:focus{
+      background-color: $colorGrisClaroHover;
+      padding: 20px;
+      font-size: 20px;
+      box-shadow: 1px 5px 10px grey;
+  }
+  }
+  /*Boton Login*/
+ .btn-1{
+    background-color: $colorRosa;
+    &:hover{
+        background-color: $colorRosaHover;
+    }
+  }
+  /*Boton carrito*/
+  .btn-2{
+    background-color: $colorCeleste;
+    &:hover{
+        background-color: $colorCelesteHover;
+      }
+  }
+ 
+
+ 
+  

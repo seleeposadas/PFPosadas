@@ -1,0 +1,70 @@
+/*Banner*/
+section.cabecera{
+    @include background-image("/img/pexels-lumn-4155247.jpg", center, no-repeat, cover, relative);
+    height: 300px;
+    z-index: 0;
+    /*Titulo*/
+    div.cabecera__texto{
+        background-color: white;
+        width: 100%;
+        border-radius: 100px 100px 0 0;
+        h1{
+          @include fuente('Roboto Black', $fontSizeGrande, #0b0b0b);
+        }
+    }
+  }
+  
+  
+  section.migas_de_pan{
+    --bs-breadcrumb-divider: '>';
+    padding: 10px;
+  }
+  /*Grid*/
+  
+  /*Columna filtrar por*/
+  
+  div.barra_lateral__filtro{
+    @include fuente('Roboto Tin', $fontSizeChica, #374259);
+    border-right: 1px solid rgb(236, 220, 220);
+    ul.barra_lateral__filtro_por li.lista-anidada:hover{
+        box-shadow: 1px 8px 20px grey;
+      }
+      .barra_lateral__filtro_por_categorias_listas{
+        text-align: center;
+        font-size: $fontSizeNormal;
+      }
+  }
+  
+  .grilla{
+    /*cards*/
+    .items{
+      .col{
+        .card{
+      @extend .card-producto;
+        }
+        &:hover{
+          box-shadow: 1px 10px 20px grey;
+          border-radius: 5px;
+        }
+        h2{
+          @extend .titulo-h3;
+        }
+      }
+    }
+    /*Botones de navegacion de paginas*/
+     ul.btn_paginacion{
+        justify-content: center;
+        margin-top: 10px;
+        a{
+            background-color: $colorCeleste;
+            border: none;
+            padding: 20px;
+            @include fuente('Roboto Tin', $fontSizeChica, #374259);
+         &:hover{
+            background-color: $colorCelesteHover;
+            color: white;
+          }
+      }
+    }
+  }
+  

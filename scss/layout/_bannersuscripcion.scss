@@ -1,0 +1,47 @@
+/*Banner Suscripcion*/
+.banner-suscripcion{
+    background-color: $colorVerde;
+    text-align: center;
+    @include sizes(200px, 100%);
+    display: flex;
+    justify-content: center;
+
+    .banner-suscripcion-content{
+        align-items: center;
+        margin-top: 40px;
+        background-color: $colorVerde;
+        & h3 {
+            margin-top: 0;
+            @extend .titulo-h3;
+          }
+         & input {
+            margin-top: 0;
+            font-size: $fontSizeChica;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 1px 3px 5px grey;
+            &:focus{
+              padding: 20px;
+              font-size: 20px;
+              box-shadow: 1px 5px 10px grey;
+          }
+          }
+         & button {
+            margin: 5px;
+            padding: 15px;
+            @extend .btn-mas;
+            background-color: $colorCeleste;
+            &:hover{
+                background-color: $colorCelesteHover;
+                box-shadow: 1px 8px 20px grey;
+              }
+              &:focus{
+                background-color: $colorCelesteHover;
+                padding: 20px;
+                font-size: 20px;
+                box-shadow: 1px 5px 10px grey;
+            }
+          }
+        }
+  }

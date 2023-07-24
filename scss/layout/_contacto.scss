@@ -1,0 +1,110 @@
+main{
+    .banner-contacto{
+        @include background-image("/img/pexels-towfiqu-barbhuiya-8780312.jpg", center, no-repeat, cover, relative);
+        @include sizes(600px, 100%);
+        opacity: .6;
+        z-index: 0;
+        & h1 {
+            @extend .titulo-h1;
+            color: black;
+        }
+    }
+    
+    .horarios-content{
+        i{
+            font-size: $fontSizeGrande;
+        }
+        h2{
+            @extend .titulo-h3;
+        }
+        ul{
+            @extend .text;
+        }
+       li{
+        margin-top: 10px;
+       }
+    }
+    
+    .escribinos-descripcion-content{
+        @extend .contacto-cards;
+        .iconos{
+            @include fuente('Roboto Tin', $fontSizeGrande, black);
+            
+        }
+        }
+        .escribinos-form-content{
+            .input-group{
+                
+                input{
+                    padding: 15px;
+                    @include fuente('Roboto Tin', $fontSizeChica, gray);
+                }
+                input:focus{
+                    padding: 20px;
+                    font-size: 20px;
+                    box-shadow: 1px 5px 10px grey;  
+                }
+                textarea{
+                    padding: 15px;
+                }
+                .input-group-text{
+                    font-size: $fontSizeChica;
+                }
+            }
+            button{
+                @extend .btn-comprar;
+                &:hover{
+                    background-color: $colorRosaHover;
+                    color: white;
+                }
+                &:focus{
+                    background-color: $colorRosaHover;
+                    padding: 20px;
+                    font-size: 20px;
+                    box-shadow: 1px 5px 10px grey;
+                }
+            }
+    
+        }
+    
+    
+    .visitanos{
+       
+        .visitanos-content-lista{
+            h2{
+                @extend .titulo-h2;
+               }
+               .iconos{
+                @include fuente('Roboto Tin', $fontSizeGrande, black);
+                
+               }
+                li{
+                    @extend .text;
+                    padding: 5px;
+                    i{
+                        font-size: $fontSizeMediana;
+                    }
+                    
+                }
+        }
+       .visitanos-map{
+        border: 1px solid $colorCeleste;
+        border-radius: 10px;
+        padding: 20px;
+        iframe{
+            @include sizes(350px, 100%);
+            border-radius: 10px;
+        }
+       }
+        
+    }
+    
+    .contacto-cards{
+        h2{
+            @extend .titulo-h2;
+        }
+        p{
+            @extend .text;
+        }
+    }
+}

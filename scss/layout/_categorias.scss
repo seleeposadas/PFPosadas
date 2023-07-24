@@ -1,0 +1,37 @@
+/*Categorias*/
+.card-categoria{
+    @include background-image("/img/collar.jpg", top, no-repeat, cover, relative);
+    @include sizes(200px, auto);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: end;
+    text-align: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 5px 10px grey;
+    justify-self: stretch;
+     &:hover{
+        box-shadow: 1px 8px 20px grey;
+        opacity: .7;
+      }
+      &.card-content-categoria__medio{
+        align-self: center;
+        height: 400px;
+      }
+      a.btn-ver-categoria{
+        @extend .btn-comprar;
+        font-size: $fontSizeNormal;
+       &:hover{
+        background-color: $colorRosaHover;
+      }
+      &:focus{
+        background-color: $colorRosaHover;
+        padding: 18px;
+        font-size: 18px;
+        box-shadow: 1px 5px 10px grey;
+    }
+    }
+    
+  }
+ 

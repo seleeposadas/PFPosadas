@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tienda de Acessorios - Tienda - Consegui los mejores accesorios a un precio imperdible! Recibimos todas los medios de pago. Hacemos envios a domicilio dentro de la provincia de Cordoba.">
+    <meta name="keywords" content="TIENDA, ACCESORIOS, COMPRAR, ENVIOS, CORDOBA, MEDIOS DE PAGO, JOYAS, RELOJ, RELOJES, ANILLO, ANILLOS, PULSERAS, AROS, ARITOS">
     <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" />
     <!--Font Awesome-->
     <link
@@ -18,7 +21,7 @@
       href="./icons/favicon_io/favicon-32x32.png"
       sizes="32x32"
     />
-    <title>Eccomerce</title>
+    <title>Tienda de Acessorios - Tienda</title>
   </head>
   <body>
     <header class="navbarOtras">
@@ -65,13 +68,14 @@
             </ul>
             <!--Botones para ir al carrito e iniciar sesion-->
             <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <button class="btn-1" type="button">
+              <button class="btn-navbar btn-1" type="button">
                 <a href="../pages/login.html">
                   <i class="fa-regular fa-user"></i
                 ></a>
               </button>
-              <button class="btn-2" type="button">
-                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+              <button class="btn-navbar btn-2" type="button">
+                <a href="#">
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
               </button>
             </div>
           </div>
@@ -101,9 +105,9 @@
           </ol>
         </section>
         <!--Uso el grid de bootstrap para el diseño-->
-        <div class="row">
+        <div class="row grilla">
           <!--Creo una barra lateral para los filtros-->
-          <div class="col-md-auto col-lg-2 py-3 barra_lateral__filtro">
+          <div class="col-sm-12 col-md-12 col-lg-2 py-3 barra_lateral__filtro">
             <div class="flex-shrink-0 p-3">
               <span class="fs-5 fw-semibold">Filtrar por:</span>
               <ul class="list-unstyled ps-0 barra_lateral__filtro_por">
@@ -213,20 +217,10 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-10">
+          <div class="col-sm-12 col-lg-10">
             <div class="row">
-              <!--Aca van los bloques de orden (esto es para despues)-->
-              <!--<div class="col-sm-12">
-                <div class="row">
-                  <div class="col-sm-4 py-1 barra_lateral__filtro">
-                    <div class="flex-shrink-0 p-3">
-                      <p>hola</p>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
               <!--Aca van las cards con los items-->
-              <div class="col-sm-8 col-sm-12">
+              <div class="col-sm-12 col-lg-12 items" data-aos="zoom-in">
                 <div class="row row-cols-sm-1 row-cols-lg-3 row-cols-md-2 g-3">
                   <div class="col">
                     <div
@@ -234,40 +228,39 @@
                     >
                       <img
                         src="../img/aros1.jpg"
-                        class="img-fluid"
+                        class="card-img-top"
                         alt="Producto en venta"
                       />
                       <div class="card-body ">
-                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <h2 class="card-title">Lorem, ipsum.</h2>
                         <p class="card-text">
                           Lorem, ipsum dolor sit amet consectetur adipisicing
                           elit. Eius, suscipit.
                         </p>
-                        <h6 class="card-title card_precio position-absolute bottom-0 end-15 text-sm-end fs-4 py-3">
+                        <h3 class="card-title card_precio ">
                           $100.00
-                        </h6>
+                        </h3>
                       </div>
                     </div>
                   </div>
 
                   <div class="col">
-                    <div
-                      class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
+                    <div class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
                     >
                       <img
                         src="../img/collar3.jpg"
-                        class="img-fluid"
+                        class="card-img-top"
                         alt="Producto en venta"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <h2 class="card-title">Lorem, ipsum.</h2>
                         <p class="card-text">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Molestiae, necessitatibus.
                         </p>
-                        <h6 class="card-title card_precio position-absolute bottom-0 end-15 text-sm-end fs-4 py-3">
+                        <h3 class="card-title card_precio">
                           $100.00
-                        </h6>
+                        </h3>
                       </div>
                     </div>
                   </div>
@@ -277,19 +270,19 @@
                       class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
                     >
                       <img
-                        src="../img/collar8.jpg"
-                        class="img-fluid"
+                        src="../img/collar7.jpg"
+                        class="card-img-top"
                         alt="Producto en venta"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <h2 class="card-title">Lorem, ipsum.</h2>
                         <p class="card-text">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Voluptatem, dicta!
                         </p>
-                        <h6 class="card-title card_precio position-absolute bottom-0 end-15 text-sm-end fs-4 py-3">
+                        <h3 class="card-title card_precio">
                           $100.00
-                        </h6>
+                        </h3>
                       </div>
                     </div>
                   </div>
@@ -300,18 +293,18 @@
                     >
                       <img
                         src="../img/aros5.jpg"
-                        class="img-fluid"
+                        class="card-img-top"
                         alt="Producto en Venta"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <h2 class="card-title">Lorem, ipsum.</h2>
                         <p class="card-text">
                           Lorem, ipsum dolor sit amet consectetur adipisicing
                           elit. Eaque, saepe?
                         </p>
-                        <h6 class="card-title card_precio position-absolute bottom-0 end-15 text-sm-end fs-4 py-3">
+                        <h3 class="card-title card_precio">
                           $100.00
-                        </h6>
+                        </h3>
                       </div>
                     </div>
                   </div>
@@ -322,18 +315,18 @@
                     >
                       <img
                         src="../img/collar6.jpg"
-                        class="img-fluid"
+                        class="card-img-top"
                         alt="Producto en venta"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <h2 class="card-title">Lorem, ipsum.</h2>
                         <p class="card-text">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Inventore, deserunt!
                         </p>
-                        <h6 class="card-title card_precio position-absolute bottom-0 end-15 text-sm-end fs-4 py-3">
+                        <h3 class="card-title card_precio">
                           $100.00
-                        </h6>
+                        </h3>
                       </div>
                     </div>
                   </div>
@@ -343,19 +336,19 @@
                       class="card border-0 shadow-sm mb-5 py-3 bg-white rounded card-grid-item h-100"
                     >
                       <img
-                        src="../img/aros9.jpg"
-                        class="img-fluid"
+                        src="../img/aros8.jpg"
+                        class="card-img-top"
                         alt="Producto en venta"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <h2 class="card-title">Lorem, ipsum.</h2>
                         <p class="card-text">
                           Lorem ipsum dolor sit amet consectetur, adipisicing
                           elit. Nam, veritatis?
                         </p>
-                        <h6 class="card-title card_precio position-absolute bottom-0 end-15 text-sm-end fs-4 py-3">
+                        <h3 class="card-title card_precio">
                           $100.00
-                        </h6>
+                        </h3>
                       </div>
                     </div>
                   </div>
@@ -456,5 +449,7 @@
     </footer>
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
   </body>
 </html>

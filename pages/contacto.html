@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <meta name="description" content="Tienda de Acessorios - Contacto - Consegui los mejores accesorios a un precio imperdible! Recibimos todas los medios de pago. Hacemos envios a domicilio dentro de la provincia de Cordoba.">
+    <meta name="keywords" content="TIENDA, ACCESORIOS, COMPRAR, ENVIOS, CORDOBA, MEDIOS DE PAGO, JOYAS, RELOJ, RELOJES, ANILLO, ANILLOS, PULSERAS, AROS, ARITOS">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <!--Font Awesome-->
     <link
@@ -18,26 +21,40 @@
       href="./icons/favicon_io/favicon-32x32.png"
       sizes="32x32"
     />
-    <title>Eccomerce</title>
+    <title>Tienda de Acessorios - Contacto</title>
   </head>
   <body>
-
     <header class="navbarOtras">
       <nav class="navbar navbar-expand-lg position-absolute top-0 start-0">
         <!--boton hamburguesa-->
         <div class="container-fluid">
-          <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="collapse" data-bs-target="#desplegarMenu" aria-controls="desplegarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler bg-body-tertiary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#desplegarMenu"
+            aria-controls="desplegarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <!--Barra de navegacion-->
-          <div class="collapse navbar-collapse d-lg-flex nav_listas" id="desplegarMenu">
+          <div
+            class="collapse navbar-collapse d-lg-flex nav_listas"
+            id="desplegarMenu"
+          >
             <!--Nombre de la pagina-->
-            <a class="navbar-brand col-lg-3 me-0" href="../index.html">Tienda de Acessorios</a>
+            <a class="navbar-brand col-lg-3 me-0" href="../index.html"
+              >Tienda de Acessorios</a
+            >
             <!--Links de navegacion-->
             <ul class="navbar-nav col-lg-6 justify-content-lg-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/tienda.html">TIENDA</a>
@@ -51,10 +68,12 @@
             </ul>
             <!--Botones para ir al carrito e iniciar sesion-->
             <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <button class="btn-1" type="button"><a href="../pages/login.html">
-                <i class="fa-regular fa-user"></i></a>
+              <button class="btn-navbar btn-1" type="button">
+                <a href="../pages/login.html">
+                  <i class="fa-regular fa-user"></i
+                ></a>
               </button>
-              <button class="btn-2" type="button">
+              <button class="btn-navbar btn-2" type="button">
                 <i class="fa-sharp fa-solid fa-bag-shopping"></i>
               </button>
             </div>
@@ -62,54 +81,144 @@
         </div>
       </nav>
     </header>
-
     <main>
-<div>
-  <h1>Proximamente</h1>
-    <div class="container-fluid">
-        <h3>contacto</h3>
-        <ul>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-        </ul>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+      <div class="px-4 py-5 text-center banner-contacto">
+        <h1 class="position-absolute top-50 start-50 translate-middle">CONTACTO</h1>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div class="container">
-        <h3>Ubicacion</h3>
-        <ul>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-        </ul>
-      </div>
-    </div>
-</div>
+      <div class="separador"></div>
+      <section class="py-5 my-5 text-center horarios-content" data-aos="zoom-in">
+        <i class="fa-regular fa-clock m-4"></i>
+        <h2 class="display-5 titulo-h2">Horarios</h2>
+        <div class="col-lg-6 mx-auto">
+          <ul class="mb-4">
+            <li><p>De lunes a viernes de 10 a 13hs y de 16 a 20hs</p></li>
+            <li>Los sabados de 9 a 12hs.</li>
+            <li>Tienda virtual las 24hs.</li>
+          </ul>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section class="container col-xl-10 col-xxl-8 px-4 py-5 escribinos" data-aos="zoom-in">
+        <div class="row align-items-center g-lg-5 py-5 escribinos-content">
+          <div class="col-lg-7 text-center text-lg-start escribinos-descripcion-content">
+            <p class="iconos m-lg-3"><i class="fa-regular fa-pen-to-square"></i></p>
+            <h2 class="display-4 mb-3">Escribinos</h2>
+            <p class="col-lg-10 fs-4 text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ratione maxime hic, vitae culpa quo nulla pariatur impedit tempore quae.</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5 escribinos-form-content">
+            <form class="p-4 p-md-5 border rounded-3">
+              <div class="input-group mb-3">
+                <span class="input-group-text">Nombre</span>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="nombre">
+              </div>              
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="email@ejemplo.com" aria-label="email">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Mensaje</span>
+                <textarea class="form-control" aria-label="Mensaje"></textarea>
+              </div>
+              <div class="input-group mb-3">
+                <button class="w-100 btn btn-lg" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section class="container col-xxl-8 px-4 py-5 visitanos" data-aos="zoom-in">
+        <div class="row align-items-center g-5 py-5 visitanos-content">
+          <div class="col-10 col-sm-8 col-lg-6 visitanos-map">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601.9070202816947!2d-64.18373343638251!3d-31.416873278253835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Martin!5e0!3m2!1sen!2sar!4v1686419873350!5m2!1sen!2sar"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" alt="Mapa de ubicacion"></iframe>
+          </div>
+          <div class="col-lg-6 visitanos-content-lista mb-lg-3 justify-content-center text-center">
+            <p class="iconos"><i class="fa-regular fa-compass"></i></p>
+            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Visitanos</h2>
+            <ul>
+              <li><p>Nos encontramos en calle falsa 123, Cordoba, Cordoba</p></li>
+              <li><p>Ó podes seguirnos en nuestras redes sociales</p>
+                <ul class="d-grid gap-3 d-sm-flex visitanos-content-lista-redes justify-content-center">
+                  <li><a class="text-body-secondary" href="#"
+                    ><i class="fa-brands fa-square-facebook"></i
+                  ></a></li>
+                  <li><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a class="text-body-secondary" href="#"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
     </main>
-    <footer class="py-3 position-absolute top-100 start-0 end-0">
+    <footer class="py-3">
       <div class="container">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
-        <li class="nav-item"><a href="../pages/tienda.html" class="nav-link px-2 text-body-secondary">Tienda</a></li>
-        <li class="nav-item"><a href="../pages/contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
-        <li class="nav-item"><a href="../pages/nosotros.html" class="nav-link px-2 text-body-secondary">Nosotros</a></li>
-        <li class="nav-item"><a href="../pages/login.html" class="nav-link px-2 text-body-secondary">Iniciar Sesion</a></li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2023 Selene Posadas</p>
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-      </ul>
-    </div>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link px-2 text-body-secondary"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/tienda.html"
+              class="nav-link px-2 text-body-secondary"
+              >Tienda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/contacto.html"
+              class="nav-link px-2 text-body-secondary"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/nosotros.html"
+              class="nav-link px-2 text-body-secondary"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="../pages/login.html"
+              class="nav-link px-2 text-body-secondary"
+              >Iniciar Sesion</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Selene Posadas</p>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-  <script src="../js/popper.js"></script>
+    <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+  </body>
 </html>

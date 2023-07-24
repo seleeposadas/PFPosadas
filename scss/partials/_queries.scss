@@ -1,0 +1,45 @@
+@media screen and (max-width: 900px){
+  /*media query del navbar*/
+    div.columnanav{
+      background-color: $colorVerde;
+      border-radius: 10px;
+      font-size: $fontSizeMediana;
+    }
+    /*media query del banner de suscripcion*/
+    section.banner-suscripcion {
+      height: auto;
+    
+      .banner-suscripcion-content {
+        margin-top: 20px;
+        padding: 10px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    /*media query de la seccion de informacion de compra*/
+    article.info-compra {
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+
+     .info-content-1, .info-content-2 {
+      width: $anchoMedio;
+      border-right: 2px solid rgb(17, 15, 15);
+      border-bottom: none;
+    } 
+   }
+   /*Media Query de la pagina nosotros*/
+   .nosotros-content{
+    .iconos li{
+      font-size: 25px;
+    }
+  }
+}
+  
+   @media screen and (max-width: 480px) {
+    .card-new-container {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+    
+  }
