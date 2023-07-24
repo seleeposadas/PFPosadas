@@ -1,6 +1,6 @@
 /*Banner*/
 section.cabecera{
-    @include background-image("/img/pexels-lumn-4155247.jpg", center, no-repeat, cover, relative);
+    @include background-image("../img/pexels-lumn-4155247.jpg", center, no-repeat, cover, relative);
     height: 300px;
     z-index: 0;
     /*Titulo*/

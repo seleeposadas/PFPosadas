@@ -1,17 +1,17 @@
 /*new*/
 .new {
-  margin: 50px;
+  margin: 30px;
   .card-new-container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
-    padding: 30px 100px;
+    padding: 30px 15px;
     .card-new {
       position: relative;
       border-radius: 5px;
       overflow: hidden;
       & img {
-        @include sizes(auto, 100%);
+        @include sizes(50%, 50%);
       }
       .card-content-new {
         bottom: 0;
@@ -19,11 +19,11 @@
         right: 0;
         background-color: rgba(0, 0, 0, 0.7);
         color: white;
-        padding: 20px;
+        padding: 15px;
         transition: opacity 0.3s;
         box-shadow: 1px 5px 10px grey;
         p {
-          margin-bottom: 20px;
+          margin-bottom: 15px;
         }
         .button {
           display: inline-block;
@@ -47,8 +47,8 @@
   .card-new-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 50px;
-    margin: 25px 15px;
+    grid-gap: 10px;
+    margin: 5px 10px;
     .card-item {
       border: 1px solid #ccc;
       border-radius: 5px;
@@ -59,7 +59,7 @@
         opacity: .7;
       }
       & img {
-        @include sizes(auto, 100%);
+        @include sizes(80%, 80%);
       }
       .card-content-item {
         padding: 20px;

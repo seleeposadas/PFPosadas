@@ -215,7 +215,7 @@ footer {
 
 /*Categorias*/
 .card-categoria {
-  background-image: url("/img/collar.jpg");
+  background-image: url("../img/collar.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -427,7 +427,7 @@ footer {
 
 /*Banner*/
 section.cabecera {
-  background-image: url("/img/pexels-lumn-4155247.jpg");
+  background-image: url("../img/pexels-lumn-4155247.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -498,7 +498,7 @@ div.barra_lateral__filtro .barra_lateral__filtro_por_categorias_listas {
 }
 
 main .banner-contacto {
-  background-image: url("/img/pexels-towfiqu-barbhuiya-8780312.jpg");
+  background-image: url("../img/pexels-towfiqu-barbhuiya-8780312.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -573,7 +573,7 @@ main .visitanos .visitanos-map iframe {
   border-radius: 10px;
 }
 main .banner-nosotros {
-  background-image: url("/img/pexels-ivan-samkov-7394374.jpg");
+  background-image: url("../img/pexels-ivan-samkov-7394374.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -633,7 +633,7 @@ main .btn-redes:focus {
 }
 
 .cover-container {
-  background-image: url("/img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

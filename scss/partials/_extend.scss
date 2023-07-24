@@ -14,7 +14,7 @@
     border: none;
     cursor: pointer;
     background-color: $colorRosa;
-    border-radius: 18px;
+    border-radius: 10px;
     @include fuente('Roboto Black', $fontSizeMediana, white);
     &:hover{
       background-color: $colorRosaHover;
@@ -34,11 +34,11 @@
     box-shadow: 1px 5px 10px grey;
     border-radius: 5px;
     img {
-      @include sizes(100%, auto);
+      @include sizes(80%, 80%);
     }
     .card-content{
       padding: 20px;
-      @include sizes(100%, auto);
+      @include sizes(80%, 80%);
       h3{
         @extend .titulo-h3;
       }
@@ -50,7 +50,7 @@
         @extend .btn-mas;
         &:hover{
             background-color: $colorVerdeHover;
-            @include sizes(100%, 50%);
+            @include sizes(80%, 50%);
         }
       }
     }
