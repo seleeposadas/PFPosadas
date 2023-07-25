@@ -9,6 +9,7 @@
   .navbarOtras{
     background-color: $colorVerde;
     @include sizes(150px, $anchoMax);
+    @include fuente('Roboto Black', $fontSizeMediana - 5, white);
     position: relative;
     z-index: 1;
      div.nav_listas{
