@@ -16,8 +16,8 @@
 
 
 .cover-container{
-    @include background-image("../img/banner.jpg", center, no-repeat, cover, relative);
-    @include sizes(100vh, 100%);
+    @include background-image("../img/banner.png", center, no-repeat, cover, relative);
+    @include sizes(120vh, 100%);
     a{
       color: white;
     }
@@ -30,6 +30,7 @@
     .banner-content {
       padding: 260px 10px 15px 40px;
       color: white;
+      
     }
       h1 {
       margin-bottom: 10px;

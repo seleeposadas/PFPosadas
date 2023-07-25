@@ -1,9 +1,9 @@
-@media screen and (max-width: 900px){
+@media screen and (max-width: 990px){
   /*media query del navbar*/
     div.columnanav{
       background-color: $colorVerde;
       border-radius: 10px;
-      font-size: $fontSizeMediana;
+      font-size: 18px;
     }
     /*media query del banner de suscripcion*/
     section.banner-suscripcion {
@@ -14,7 +14,31 @@
         padding: 10px;
       }
     }
+    .cover-container{
+      @include background-image("../img/banner.png", center, no-repeat, cover, relative);
+      @include sizes(760px, 100%);
+      margin-bottom: 10px;
+      a{
+        color: white;
+      }
+    }
+    .info-content h2,
+  .info-content-3 h2,
+  .banner-content h1 {
+    font-size: 20px;
   }
+  .banner-content p {
+    font-size: 18px;
+  }
+  
+  .banner-content .btn-comprar {
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+    
+  }
+  
+  
   
   @media screen and (max-width: 750px) {
     /*media query de la seccion de informacion de compra*/
@@ -42,4 +66,43 @@
       padding: 10px;
     }
     
+  }
+
+  @media screen and (max-width: 450px) {
+    .info-compra {
+      flex-direction: column;
+      .info-content,
+      .info-content-3 {
+        width: 100%; 
+        border-right: none; 
+    }
+  
+  }
+    .info-content h2,
+    .info-content-3 h2,
+    .banner-content h1 {
+      font-size: 18px;
+    }
+    .banner-content p {
+      font-size: 16px;
+    }
+    
+    .banner-content .btn-comprar {
+      font-size: 12px;
+      padding: 8px 14px;
+    }
+  
+   
+    .categorias .card-categoria {
+      margin-bottom: 10px;
+    }
+
+    .cover-container{
+      @include background-image("../img/banner.png", center, no-repeat, cover, relative);
+      @include sizes(760px, 100%);
+      margin-bottom: 10px;
+      a{
+        color: white;
+      }
+    }
   }

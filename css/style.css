@@ -44,7 +44,7 @@ li {
   color: gray;
 }
 
-.btn-comprar, main form .btn-lg, main .escribinos-form-content button, .card-categoria a.btn-ver-categoria {
+.btn-comprar, main form .btn-lg, main .escribinos-form-content button, .card-categoria a.btn-ver-categoria, .card-content-categoria__medio a.btn-ver-categoria, .card-categoria-7 a.btn-ver-categoria, .card-categoria-6 a.btn-ver-categoria, .card-categoria-5 a.btn-ver-categoria, .card-categoria-3 a.btn-ver-categoria, .card-categoria-2 a.btn-ver-categoria, .card-categoria-1 a.btn-ver-categoria {
   border: none;
   cursor: pointer;
   background-color: #DBC4F0;
@@ -53,7 +53,7 @@ li {
   font-size: 30px;
   color: white;
 }
-.btn-comprar:hover, main form .btn-lg:hover, main .escribinos-form-content button:hover, .card-categoria a.btn-ver-categoria:hover {
+.btn-comprar:hover, main form .btn-lg:hover, main .escribinos-form-content button:hover, .card-categoria a.btn-ver-categoria:hover, .card-content-categoria__medio a.btn-ver-categoria:hover, .card-categoria-7 a.btn-ver-categoria:hover, .card-categoria-6 a.btn-ver-categoria:hover, .card-categoria-5 a.btn-ver-categoria:hover, .card-categoria-3 a.btn-ver-categoria:hover, .card-categoria-2 a.btn-ver-categoria:hover, .card-categoria-1 a.btn-ver-categoria:hover {
   background-color: #caabe8;
 }
 
@@ -214,12 +214,7 @@ footer {
 }
 
 /*Categorias*/
-.card-categoria {
-  background-image: url("../img/collar.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.card-categoria, .card-content-categoria__medio, .card-categoria-7, .card-categoria-6, .card-categoria-5, .card-categoria-3, .card-categoria-2, .card-categoria-1 {
   width: auto;
   height: 200px;
   display: -webkit-box;
@@ -243,28 +238,84 @@ footer {
           box-shadow: 1px 5px 10px grey;
   justify-self: stretch;
 }
-.card-categoria:hover {
+.card-categoria:hover, .card-content-categoria__medio:hover, .card-categoria-7:hover, .card-categoria-6:hover, .card-categoria-5:hover, .card-categoria-3:hover, .card-categoria-2:hover, .card-categoria-1:hover {
   -webkit-box-shadow: 1px 8px 20px grey;
           box-shadow: 1px 8px 20px grey;
   opacity: 0.7;
 }
-.card-categoria.card-content-categoria__medio {
+.card-categoria.card-content-categoria__medio, .card-content-categoria__medio {
   -ms-flex-item-align: center;
       align-self: center;
   height: 400px;
 }
-.card-categoria a.btn-ver-categoria {
+.card-categoria a.btn-ver-categoria, .card-content-categoria__medio a.btn-ver-categoria, .card-categoria-7 a.btn-ver-categoria, .card-categoria-6 a.btn-ver-categoria, .card-categoria-5 a.btn-ver-categoria, .card-categoria-3 a.btn-ver-categoria, .card-categoria-2 a.btn-ver-categoria, .card-categoria-1 a.btn-ver-categoria {
   font-size: 18px;
 }
-.card-categoria a.btn-ver-categoria:hover {
+.card-categoria a.btn-ver-categoria:hover, .card-content-categoria__medio a.btn-ver-categoria:hover, .card-categoria-7 a.btn-ver-categoria:hover, .card-categoria-6 a.btn-ver-categoria:hover, .card-categoria-5 a.btn-ver-categoria:hover, .card-categoria-3 a.btn-ver-categoria:hover, .card-categoria-2 a.btn-ver-categoria:hover, .card-categoria-1 a.btn-ver-categoria:hover {
   background-color: #caabe8;
 }
-.card-categoria a.btn-ver-categoria:focus {
+.card-categoria a.btn-ver-categoria:focus, .card-content-categoria__medio a.btn-ver-categoria:focus, .card-categoria-7 a.btn-ver-categoria:focus, .card-categoria-6 a.btn-ver-categoria:focus, .card-categoria-5 a.btn-ver-categoria:focus, .card-categoria-3 a.btn-ver-categoria:focus, .card-categoria-2 a.btn-ver-categoria:focus, .card-categoria-1 a.btn-ver-categoria:focus {
   background-color: #caabe8;
   padding: 18px;
   font-size: 18px;
   -webkit-box-shadow: 1px 5px 10px grey;
           box-shadow: 1px 5px 10px grey;
+}
+
+.card-categoria-1 {
+  background-image: url("../img/aros12.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-categoria-2 {
+  background-image: url("../img/anillo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-categoria-3 {
+  background-image: url("../img/reloj.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-categoria-5 {
+  background-image: url("../img/pulsera3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-categoria-6 {
+  background-image: url("../img/set3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-categoria-7 {
+  background-image: url("../img/set5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-content-categoria__medio {
+  background-image: url("../img/collar13.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /*new*/
@@ -498,18 +549,14 @@ div.barra_lateral__filtro .barra_lateral__filtro_por_categorias_listas {
 }
 
 main .banner-contacto {
-  background-image: url("../img/pexels-towfiqu-barbhuiya-8780312.jpg");
+  background-image: url("../img/banner-contacto.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   height: 600px;
-  opacity: 0.6;
   z-index: 0;
-}
-main .banner-contacto h1 {
-  color: black;
 }
 main .horarios-content i {
   font-size: 35px;
@@ -573,14 +620,13 @@ main .visitanos .visitanos-map iframe {
   border-radius: 10px;
 }
 main .banner-nosotros {
-  background-image: url("../img/pexels-ivan-samkov-7394374.jpg");
+  background-image: url("../img/banner-nosotros.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   height: 600px;
-  opacity: 0.6;
   z-index: 0;
 }
 main .nosotros .nosotros-content .nosotros-img {
@@ -633,13 +679,13 @@ main .btn-redes:focus {
 }
 
 .cover-container {
-  background-image: url("../img/banner.jpg");
+  background-image: url("../img/banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 .cover-container a {
   color: white;
@@ -733,12 +779,12 @@ header div.row div {
   display: block;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   /*media query del navbar*/
   div.columnanav {
     background-color: #A0C49D;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 18px;
   }
   /*media query del banner de suscripcion*/
   section.banner-suscripcion {
@@ -747,6 +793,31 @@ header div.row div {
   section.banner-suscripcion .banner-suscripcion-content {
     margin-top: 20px;
     padding: 10px;
+  }
+  .cover-container {
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 760px;
+    margin-bottom: 10px;
+  }
+  .cover-container a {
+    color: white;
+  }
+  .info-content h2,
+  .info-content-3 h2,
+  .banner-content h1 {
+    font-size: 20px;
+  }
+  .banner-content p {
+    font-size: 18px;
+  }
+  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main .escribinos-form-content button, main .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
+    font-size: 15px;
+    padding: 8px 14px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -772,5 +843,46 @@ header div.row div {
   .card-new-container {
     grid-template-columns: 1fr;
     padding: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .info-compra {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-compra .info-content,
+  .info-compra .info-content-3 {
+    width: 100%;
+    border-right: none;
+  }
+  .info-content h2,
+  .info-content-3 h2,
+  .banner-content h1 {
+    font-size: 18px;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main .escribinos-form-content button, main .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+  .categorias .card-categoria, .categorias .card-categoria-1, .categorias .card-categoria-2, .categorias .card-categoria-3, .categorias .card-categoria-5, .categorias .card-categoria-6, .categorias .card-categoria-7, .categorias .card-content-categoria__medio {
+    margin-bottom: 10px;
+  }
+  .cover-container {
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 760px;
+    margin-bottom: 10px;
+  }
+  .cover-container a {
+    color: white;
   }
 }

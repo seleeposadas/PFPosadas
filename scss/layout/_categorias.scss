@@ -1,6 +1,5 @@
 /*Categorias*/
 .card-categoria{
-    @include background-image("../img/collar.jpg", top, no-repeat, cover, relative);
     @include sizes(200px, auto);
     display: flex;
     flex-direction: row;
@@ -34,4 +33,32 @@
     }
     
   }
+ .card-categoria-1{
+  @extend .card-categoria;
+  @include background-image("../img/aros12.jpg", center, no-repeat, cover, relative);
+ }
+ .card-categoria-2{
+  @extend .card-categoria;
+  @include background-image("../img/anillo.png", center, no-repeat, cover, relative);
+ }
+ .card-categoria-3{
+  @extend .card-categoria;
+  @include background-image("../img/reloj.png", center, no-repeat, cover, relative);
+ }
  
+ .card-categoria-5{
+  @extend .card-categoria;
+  @include background-image("../img/pulsera3.jpg", center, no-repeat, cover, relative);
+ }
+ .card-categoria-6{
+  @extend .card-categoria;
+  @include background-image("../img/set3.jpg", center, no-repeat, cover, relative);
+ }
+ .card-categoria-7{
+  @extend .card-categoria;
+  @include background-image("../img/set5.jpg", center, no-repeat, cover, relative);
+ }
+ .card-content-categoria__medio{
+  @extend .card-categoria;
+  @include background-image("../img/collar13.jpg", center, no-repeat, cover, relative);
+ }
