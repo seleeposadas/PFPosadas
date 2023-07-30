@@ -3,7 +3,13 @@
     div.columnanav{
       background-color: $colorVerde;
       border-radius: 10px;
-      font-size: 18px;
+      font-size: 15px;
+    }
+    .navbarOtras a{
+      font-size: 15px;
+    }
+    header nav a img {
+      @include sizes(110px, 110px);
     }
     /*media query del banner de suscripcion*/
     section.banner-suscripcion {

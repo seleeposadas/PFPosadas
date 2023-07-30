@@ -7,7 +7,10 @@ main{
             @extend .titulo-h1;
         }
     }
-    
+    div.contenedor{
+        @include background-image("../img/background1.jpeg", center, no-repeat, cover, relative);
+        @include sizes(100%, 100%);
+        
     .horarios-content{
         i{
             font-size: $fontSizeGrande;
@@ -24,6 +27,7 @@ main{
     }
     
     .escribinos-descripcion-content{
+        
         @extend .contacto-cards;
         .iconos{
             @include fuente('Roboto Tin', $fontSizeGrande, black);
@@ -105,4 +109,5 @@ main{
             @extend .text;
         }
     }
+}
 }

@@ -1,15 +1,20 @@
  /*Barra de navegacion*/
  header nav {
-  @include fuente('Roboto Black', $fontSizeMediana - 5, white);
+  @include fuente('Roboto Black', $fontSizeMediana - 7, white);
     @include sizes(150px, $anchoMax);
     justify-content: space-evenly;  
+    position: relative;
+    z-index: 1;
+    a img{
+      @include sizes(150px, 150px);
+    }
   }
   
    /*Barra de navegacion de las otras paginas*/
   .navbarOtras{
     background-color: $colorVerde;
     @include sizes(150px, $anchoMax);
-    @include fuente('Roboto Black', $fontSizeMediana - 5, white);
+    @include fuente('Roboto Black', $fontSizeMediana - 10, white);
     position: relative;
     z-index: 1;
      div.nav_listas{
@@ -24,15 +29,15 @@
     div button span{
         border-radius: 5px;
         font-size: 25px;
-        padding: 25px;
+        padding: 15px;
  }
-    div a:hover{
+     a:hover{
      background-color: $colorGrisClaroHover;
      opacity: .75;
      border-radius: 15px;
   }
   div a:focus{
-    background-color: $colorRosaHover;
+    border: 1px solid black;  
     padding: 10px;
     font-size: 18px;
     box-shadow: 1px 5px 10px grey;

@@ -26,25 +26,25 @@ li {
   color: white;
 }
 
-.titulo-h2, .banner h2, main .nosotros .nosotros-content .iconos, main .nosotros .nosotros-content h2, main .contacto-cards h2, main .escribinos-descripcion-content h2, main .visitanos .visitanos-content-lista h2, .new .card-new h3 {
+.titulo-h2, .banner h2, main .nosotros .nosotros-content .iconos, main .nosotros .nosotros-content h2, main div.contenedor .contacto-cards h2, main div.contenedor .escribinos-descripcion-content h2, main div.contenedor .visitanos .visitanos-content-lista h2, .new .card-new h3 {
   font-family: "Roboto Medium";
   font-size: 35px;
   color: black;
 }
 
-.titulo-h3, article.info-compra p, main .horarios-content h2, .grilla .items .col h2, .banner-suscripcion .banner-suscripcion-content h3, .card-producto .card-content h3, .grilla .items .col .card .card-content h3, .new .card .card-content h3, .new .card-new .card-content h3 {
+.titulo-h3, article.info-compra p, main div.contenedor .horarios-content h2, .grilla .items .col h2, .banner-suscripcion .banner-suscripcion-content h3, .card-producto .card-content h3, .grilla .items .col .card .card-content h3, .new .card .card-content h3, .new .card-new .card-content h3 {
   font-family: "Roboto Medium";
   font-size: 30px;
   color: black;
 }
 
-.text, main .nosotros .nosotros-content p, main .contacto-cards p, main .escribinos-descripcion-content p, main .visitanos .visitanos-content-lista li, main .horarios-content ul {
+.text, main .nosotros .nosotros-content p, main div.contenedor .contacto-cards p, main div.contenedor .escribinos-descripcion-content p, main div.contenedor .visitanos .visitanos-content-lista li, main div.contenedor .horarios-content ul {
   font-family: "Roboto Tin";
   font-size: 20px;
   color: gray;
 }
 
-.btn-comprar, main form .btn-lg, main .escribinos-form-content button, .card-categoria a.btn-ver-categoria, .card-content-categoria__medio a.btn-ver-categoria, .card-categoria-7 a.btn-ver-categoria, .card-categoria-6 a.btn-ver-categoria, .card-categoria-5 a.btn-ver-categoria, .card-categoria-3 a.btn-ver-categoria, .card-categoria-2 a.btn-ver-categoria, .card-categoria-1 a.btn-ver-categoria {
+.btn-comprar, main form .btn-lg, main div.contenedor .escribinos-form-content button, .card-categoria a.btn-ver-categoria, .card-content-categoria__medio a.btn-ver-categoria, .card-categoria-7 a.btn-ver-categoria, .card-categoria-6 a.btn-ver-categoria, .card-categoria-5 a.btn-ver-categoria, .card-categoria-3 a.btn-ver-categoria, .card-categoria-2 a.btn-ver-categoria, .card-categoria-1 a.btn-ver-categoria {
   border: none;
   cursor: pointer;
   background-color: #DBC4F0;
@@ -53,7 +53,7 @@ li {
   font-size: 30px;
   color: white;
 }
-.btn-comprar:hover, main form .btn-lg:hover, main .escribinos-form-content button:hover, .card-categoria a.btn-ver-categoria:hover, .card-content-categoria__medio a.btn-ver-categoria:hover, .card-categoria-7 a.btn-ver-categoria:hover, .card-categoria-6 a.btn-ver-categoria:hover, .card-categoria-5 a.btn-ver-categoria:hover, .card-categoria-3 a.btn-ver-categoria:hover, .card-categoria-2 a.btn-ver-categoria:hover, .card-categoria-1 a.btn-ver-categoria:hover {
+.btn-comprar:hover, main form .btn-lg:hover, main div.contenedor .escribinos-form-content button:hover, .card-categoria a.btn-ver-categoria:hover, .card-content-categoria__medio a.btn-ver-categoria:hover, .card-categoria-7 a.btn-ver-categoria:hover, .card-categoria-6 a.btn-ver-categoria:hover, .card-categoria-5 a.btn-ver-categoria:hover, .card-categoria-3 a.btn-ver-categoria:hover, .card-categoria-2 a.btn-ver-categoria:hover, .card-categoria-1 a.btn-ver-categoria:hover {
   background-color: #caabe8;
 }
 
@@ -130,13 +130,19 @@ li {
 /*Barra de navegacion*/
 header nav {
   font-family: "Roboto Black";
-  font-size: 25px;
+  font-size: 23px;
   color: white;
   width: 100%;
   height: 150px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  position: relative;
+  z-index: 1;
+}
+header nav a img {
+  width: 150px;
+  height: 150px;
 }
 
 /*Barra de navegacion de las otras paginas*/
@@ -145,7 +151,7 @@ header nav {
   width: 100%;
   height: 150px;
   font-family: "Roboto Black";
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   position: relative;
   z-index: 1;
@@ -161,15 +167,15 @@ header nav {
 header nav div button span {
   border-radius: 5px;
   font-size: 25px;
-  padding: 25px;
+  padding: 15px;
 }
-header nav div a:hover {
+header nav a:hover {
   background-color: #e5e5e5;
   opacity: 0.75;
   border-radius: 15px;
 }
 header nav div a:focus {
-  background-color: #caabe8;
+  border: 1px solid black;
   padding: 10px;
   font-size: 18px;
   -webkit-box-shadow: 1px 5px 10px grey;
@@ -561,63 +567,72 @@ main .banner-contacto {
   height: 600px;
   z-index: 0;
 }
-main .horarios-content i {
+main div.contenedor {
+  background-image: url("../img/background1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main div.contenedor .horarios-content i {
   font-size: 35px;
 }
-main .horarios-content li {
+main div.contenedor .horarios-content li {
   margin-top: 10px;
 }
-main .escribinos-descripcion-content .iconos {
+main div.contenedor .escribinos-descripcion-content .iconos {
   font-family: "Roboto Tin";
   font-size: 35px;
   color: black;
 }
-main .escribinos-form-content .input-group input {
+main div.contenedor .escribinos-form-content .input-group input {
   padding: 15px;
   font-family: "Roboto Tin";
   font-size: 20px;
   color: gray;
 }
-main .escribinos-form-content .input-group input:focus {
+main div.contenedor .escribinos-form-content .input-group input:focus {
   padding: 20px;
   font-size: 20px;
   -webkit-box-shadow: 1px 5px 10px grey;
           box-shadow: 1px 5px 10px grey;
 }
-main .escribinos-form-content .input-group textarea {
+main div.contenedor .escribinos-form-content .input-group textarea {
   padding: 15px;
 }
-main .escribinos-form-content .input-group .input-group-text {
+main div.contenedor .escribinos-form-content .input-group .input-group-text {
   font-size: 20px;
 }
-main .escribinos-form-content button:hover {
+main div.contenedor .escribinos-form-content button:hover {
   background-color: #caabe8;
   color: white;
 }
-main .escribinos-form-content button:focus {
+main div.contenedor .escribinos-form-content button:focus {
   background-color: #caabe8;
   padding: 20px;
   font-size: 20px;
   -webkit-box-shadow: 1px 5px 10px grey;
           box-shadow: 1px 5px 10px grey;
 }
-main .visitanos .visitanos-content-lista .iconos {
+main div.contenedor .visitanos .visitanos-content-lista .iconos {
   font-family: "Roboto Tin";
   font-size: 35px;
   color: black;
 }
-main .visitanos .visitanos-content-lista li {
+main div.contenedor .visitanos .visitanos-content-lista li {
   padding: 5px;
 }
-main .visitanos .visitanos-content-lista li i {
+main div.contenedor .visitanos .visitanos-content-lista li i {
   font-size: 30px;
 }
-main .visitanos .visitanos-map {
+main div.contenedor .visitanos .visitanos-map {
   border: 1px solid #c0dbea;
   border-radius: 10px;
   padding: 20px;
 }
-main .visitanos .visitanos-map iframe {
+main div.contenedor .visitanos .visitanos-map iframe {
   width: 100%;
   height: 350px;
   border-radius: 10px;
@@ -705,7 +720,6 @@ main .btn-redes:focus {
           justify-content: flex-end;
 }
 .banner .banner-content {
-  padding: 260px 10px 15px 40px;
   color: white;
 }
 .banner h1 {
@@ -787,7 +801,14 @@ header div.row div {
   div.columnanav {
     background-color: #A0C49D;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 15px;
+  }
+  .navbarOtras a {
+    font-size: 15px;
+  }
+  header nav a img {
+    width: 110px;
+    height: 110px;
   }
   /*media query del banner de suscripcion*/
   section.banner-suscripcion {
@@ -818,7 +839,7 @@ header div.row div {
   .banner-content p {
     font-size: 18px;
   }
-  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main .escribinos-form-content button, main .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
+  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main div.contenedor .escribinos-form-content button, main div.contenedor .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
     font-size: 15px;
     padding: 8px 14px;
   }
@@ -868,7 +889,7 @@ header div.row div {
   .banner-content p {
     font-size: 16px;
   }
-  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main .escribinos-form-content button, main .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
+  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main div.contenedor .escribinos-form-content button, main div.contenedor .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
     font-size: 12px;
     padding: 8px 14px;
   }
