@@ -8,7 +8,7 @@
     @include fuente('Roboto Medium', $fontSizeMediana, black);
 }
 .text{
-    @include fuente('Roboto Tin', $fontSizeChica, gray);
+    @include fuente('Roboto Tin', $fontSizeChica + 2, gray);
 }
 .btn-comprar{
     border: none;

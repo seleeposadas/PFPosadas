@@ -7,11 +7,13 @@ main{
             @extend .titulo-h1;
         }
     }
-    div.contenedor{
-        @include background-image("../img/background1.jpeg", center, no-repeat, cover, relative);
+    .contenedor{
+        @include background-image("../img/background11.png", top, no-repeat, cover, relative);
         @include sizes(100%, 100%);
-        
+
     .horarios-content{
+        background-color: white;
+        border-radius: 55px; 
         i{
             font-size: $fontSizeGrande;
         }
@@ -25,9 +27,11 @@ main{
         margin-top: 10px;
        }
     }
-    
+}
+    .escribinos-content{
+        background-color: white;
+        border-radius: 55px; 
     .escribinos-descripcion-content{
-        
         @extend .contacto-cards;
         .iconos{
             @include fuente('Roboto Tin', $fontSizeGrande, black);
@@ -38,7 +42,7 @@ main{
             .input-group{
                 
                 input{
-                    padding: 15px;
+                    padding: 8px;
                     @include fuente('Roboto Tin', $fontSizeChica, gray);
                 }
                 input:focus{
@@ -47,7 +51,7 @@ main{
                     box-shadow: 1px 5px 10px grey;  
                 }
                 textarea{
-                    padding: 15px;
+                    padding: 8px;
                 }
                 .input-group-text{
                     font-size: $fontSizeChica;
@@ -68,10 +72,12 @@ main{
             }
     
         }
-    
+    }
     
     .visitanos{
-       
+        background-color: white;
+        border-radius: 55px; 
+        .visitanos-content{
         .visitanos-content-lista{
             h2{
                 @extend .titulo-h2;

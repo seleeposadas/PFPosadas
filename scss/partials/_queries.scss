@@ -7,6 +7,12 @@
     }
     .navbarOtras a{
       font-size: 15px;
+      padding: 5px;
+      margin: 5px;
+      text-align: center;
+    }
+    header nav{
+      text-align: center
     }
     header nav a img {
       @include sizes(110px, 110px);

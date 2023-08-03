@@ -26,25 +26,25 @@ li {
   color: white;
 }
 
-.titulo-h2, .banner h2, main .nosotros .nosotros-content .iconos, main .nosotros .nosotros-content h2, main div.contenedor .contacto-cards h2, main div.contenedor .escribinos-descripcion-content h2, main div.contenedor .visitanos .visitanos-content-lista h2, .new .card-new h3 {
+.titulo-h2, .banner h2, main .nosotros .nosotros-content .iconos, main .nosotros .nosotros-content h2, main .visitanos .contacto-cards h2, main .visitanos .escribinos-content .escribinos-descripcion-content h2, main .escribinos-content .visitanos .escribinos-descripcion-content h2, main .visitanos .visitanos-content .visitanos-content-lista h2, .new .card-new h3 {
   font-family: "Roboto Medium";
   font-size: 35px;
   color: black;
 }
 
-.titulo-h3, article.info-compra p, main div.contenedor .horarios-content h2, .grilla .items .col h2, .banner-suscripcion .banner-suscripcion-content h3, .card-producto .card-content h3, .grilla .items .col .card .card-content h3, .new .card .card-content h3, .new .card-new .card-content h3 {
+.titulo-h3, article.info-compra p, main .contenedor .horarios-content h2, .grilla .items .col h2, .banner-suscripcion .banner-suscripcion-content h3, .card-producto .card-content h3, .grilla .items .col .card .card-content h3, .new .card .card-content h3, .new .card-new .card-content h3 {
   font-family: "Roboto Medium";
   font-size: 30px;
   color: black;
 }
 
-.text, main .nosotros .nosotros-content p, main div.contenedor .contacto-cards p, main div.contenedor .escribinos-descripcion-content p, main div.contenedor .visitanos .visitanos-content-lista li, main div.contenedor .horarios-content ul {
+.text, main .nosotros .nosotros-content p, main .visitanos .contacto-cards p, main .visitanos .escribinos-content .escribinos-descripcion-content p, main .escribinos-content .visitanos .escribinos-descripcion-content p, main .visitanos .visitanos-content .visitanos-content-lista li, main .contenedor .horarios-content ul {
   font-family: "Roboto Tin";
-  font-size: 20px;
+  font-size: 22px;
   color: gray;
 }
 
-.btn-comprar, main form .btn-lg, main div.contenedor .escribinos-form-content button, .card-categoria a.btn-ver-categoria, .card-content-categoria__medio a.btn-ver-categoria, .card-categoria-7 a.btn-ver-categoria, .card-categoria-6 a.btn-ver-categoria, .card-categoria-5 a.btn-ver-categoria, .card-categoria-3 a.btn-ver-categoria, .card-categoria-2 a.btn-ver-categoria, .card-categoria-1 a.btn-ver-categoria {
+.btn-comprar, main form .btn-lg, main .escribinos-content .escribinos-form-content button, .card-categoria a.btn-ver-categoria, .card-content-categoria__medio a.btn-ver-categoria, .card-categoria-7 a.btn-ver-categoria, .card-categoria-6 a.btn-ver-categoria, .card-categoria-5 a.btn-ver-categoria, .card-categoria-3 a.btn-ver-categoria, .card-categoria-2 a.btn-ver-categoria, .card-categoria-1 a.btn-ver-categoria {
   border: none;
   cursor: pointer;
   background-color: #DBC4F0;
@@ -53,7 +53,7 @@ li {
   font-size: 30px;
   color: white;
 }
-.btn-comprar:hover, main form .btn-lg:hover, main div.contenedor .escribinos-form-content button:hover, .card-categoria a.btn-ver-categoria:hover, .card-content-categoria__medio a.btn-ver-categoria:hover, .card-categoria-7 a.btn-ver-categoria:hover, .card-categoria-6 a.btn-ver-categoria:hover, .card-categoria-5 a.btn-ver-categoria:hover, .card-categoria-3 a.btn-ver-categoria:hover, .card-categoria-2 a.btn-ver-categoria:hover, .card-categoria-1 a.btn-ver-categoria:hover {
+.btn-comprar:hover, main form .btn-lg:hover, main .escribinos-content .escribinos-form-content button:hover, .card-categoria a.btn-ver-categoria:hover, .card-content-categoria__medio a.btn-ver-categoria:hover, .card-categoria-7 a.btn-ver-categoria:hover, .card-categoria-6 a.btn-ver-categoria:hover, .card-categoria-5 a.btn-ver-categoria:hover, .card-categoria-3 a.btn-ver-categoria:hover, .card-categoria-2 a.btn-ver-categoria:hover, .card-categoria-1 a.btn-ver-categoria:hover {
   background-color: #caabe8;
 }
 
@@ -166,8 +166,8 @@ header nav a img {
 /* boton hamburguesa y hover de la barra de navegacion*/
 header nav div button span {
   border-radius: 5px;
-  font-size: 25px;
-  padding: 15px;
+  font-size: 10px;
+  padding: 5px;
 }
 header nav a:hover {
   background-color: #e5e5e5;
@@ -567,72 +567,84 @@ main .banner-contacto {
   height: 600px;
   z-index: 0;
 }
-main div.contenedor {
-  background-image: url("../img/background1.jpeg");
-  background-position: center;
+main .contenedor {
+  background-image: url("../img/background11.png");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   height: 100%;
 }
-main div.contenedor .horarios-content i {
+main .contenedor .horarios-content {
+  background-color: white;
+  border-radius: 55px;
+}
+main .contenedor .horarios-content i {
   font-size: 35px;
 }
-main div.contenedor .horarios-content li {
+main .contenedor .horarios-content li {
   margin-top: 10px;
 }
-main div.contenedor .escribinos-descripcion-content .iconos {
+main .escribinos-content {
+  background-color: white;
+  border-radius: 55px;
+}
+main .escribinos-content .escribinos-descripcion-content .iconos {
   font-family: "Roboto Tin";
   font-size: 35px;
   color: black;
 }
-main div.contenedor .escribinos-form-content .input-group input {
-  padding: 15px;
+main .escribinos-content .escribinos-form-content .input-group input {
+  padding: 8px;
   font-family: "Roboto Tin";
   font-size: 20px;
   color: gray;
 }
-main div.contenedor .escribinos-form-content .input-group input:focus {
+main .escribinos-content .escribinos-form-content .input-group input:focus {
   padding: 20px;
   font-size: 20px;
   -webkit-box-shadow: 1px 5px 10px grey;
           box-shadow: 1px 5px 10px grey;
 }
-main div.contenedor .escribinos-form-content .input-group textarea {
-  padding: 15px;
+main .escribinos-content .escribinos-form-content .input-group textarea {
+  padding: 8px;
 }
-main div.contenedor .escribinos-form-content .input-group .input-group-text {
+main .escribinos-content .escribinos-form-content .input-group .input-group-text {
   font-size: 20px;
 }
-main div.contenedor .escribinos-form-content button:hover {
+main .escribinos-content .escribinos-form-content button:hover {
   background-color: #caabe8;
   color: white;
 }
-main div.contenedor .escribinos-form-content button:focus {
+main .escribinos-content .escribinos-form-content button:focus {
   background-color: #caabe8;
   padding: 20px;
   font-size: 20px;
   -webkit-box-shadow: 1px 5px 10px grey;
           box-shadow: 1px 5px 10px grey;
 }
-main div.contenedor .visitanos .visitanos-content-lista .iconos {
+main .visitanos {
+  background-color: white;
+  border-radius: 55px;
+}
+main .visitanos .visitanos-content .visitanos-content-lista .iconos {
   font-family: "Roboto Tin";
   font-size: 35px;
   color: black;
 }
-main div.contenedor .visitanos .visitanos-content-lista li {
+main .visitanos .visitanos-content .visitanos-content-lista li {
   padding: 5px;
 }
-main div.contenedor .visitanos .visitanos-content-lista li i {
+main .visitanos .visitanos-content .visitanos-content-lista li i {
   font-size: 30px;
 }
-main div.contenedor .visitanos .visitanos-map {
+main .visitanos .visitanos-content .visitanos-map {
   border: 1px solid #c0dbea;
   border-radius: 10px;
   padding: 20px;
 }
-main div.contenedor .visitanos .visitanos-map iframe {
+main .visitanos .visitanos-content .visitanos-map iframe {
   width: 100%;
   height: 350px;
   border-radius: 10px;
@@ -805,6 +817,12 @@ header div.row div {
   }
   .navbarOtras a {
     font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+  header nav {
+    text-align: center;
   }
   header nav a img {
     width: 110px;
@@ -839,7 +857,7 @@ header div.row div {
   .banner-content p {
     font-size: 18px;
   }
-  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main div.contenedor .escribinos-form-content button, main div.contenedor .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
+  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main .escribinos-content .escribinos-form-content button, main .escribinos-content .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
     font-size: 15px;
     padding: 8px 14px;
   }
@@ -889,7 +907,7 @@ header div.row div {
   .banner-content p {
     font-size: 16px;
   }
-  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main div.contenedor .escribinos-form-content button, main div.contenedor .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
+  .banner-content .btn-comprar, .banner-content .card-categoria a.btn-ver-categoria, .card-categoria .banner-content a.btn-ver-categoria, .banner-content .card-categoria-1 a.btn-ver-categoria, .card-categoria-1 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-2 a.btn-ver-categoria, .card-categoria-2 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-3 a.btn-ver-categoria, .card-categoria-3 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-5 a.btn-ver-categoria, .card-categoria-5 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-6 a.btn-ver-categoria, .card-categoria-6 .banner-content a.btn-ver-categoria, .banner-content .card-categoria-7 a.btn-ver-categoria, .card-categoria-7 .banner-content a.btn-ver-categoria, .banner-content .card-content-categoria__medio a.btn-ver-categoria, .card-content-categoria__medio .banner-content a.btn-ver-categoria, .banner-content main .escribinos-content .escribinos-form-content button, main .escribinos-content .escribinos-form-content .banner-content button, .banner-content main form .btn-lg, main form .banner-content .btn-lg {
     font-size: 12px;
     padding: 8px 14px;
   }
