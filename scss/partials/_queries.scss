@@ -55,13 +55,20 @@
   @media screen and (max-width: 750px) {
     /*media query de la seccion de informacion de compra*/
     article.info-compra {
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-
-     .info-content-1, .info-content-2 {
-      width: $anchoMedio;
-      border-right: 2px solid rgb(17, 15, 15);
-      border-bottom: none;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      flex-direction: column;
+      justify-content: center;
+     .info-content, .info-content-3 {
+      width: 100%;
+      border: none;
+      font-size: 20px;
+      h2{
+        font-size: 18px;
+      }
+      p{
+        font-size: 18px;
+      }
     } 
    }
    /*Media Query de la pagina nosotros*/
